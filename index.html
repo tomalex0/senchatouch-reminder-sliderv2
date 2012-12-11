@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Slider Fill</title>
+    <link rel="stylesheet" href="../../resources/css/v2/sencha-touch.css" type="text/css">
+    <script type="text/javascript" src="../../sencha-touch-all-debug.js"></script>
+    
+    <script type="text/javascript" src="SliderReminder.js"></script>
+	
+    <script type="text/javascript" src="index.js"></script>
+
+    <style type="text/css">
+        .demos-loading {
+            background: rgba(0, 0, 0, .3) url(../resources/shared/loading.gif) center center no-repeat;
+            display: block;
+            width: 10em;
+            height: 10em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -5em;
+            margin-top: -5em;
+            -webkit-border-radius: .5em;
+            color: #fff;
+            text-shadow: #000 0 1px 1px;
+            text-align: center;
+            padding-top: 8em;
+            font-weight: bold;
+        }
+
+        
+        .x-sliderinfo .x-draggable {
+            z-index:2;
+        }
+        .x-sliderinfo .x-thumb{
+        	background: transparent;
+        	border: solid 3px white;
+        	border-radius :0.2em;
+        }
+        .x-sliderinfo .x-thumb::before {
+        	
+        	border-radius :0.2em;
+        	background:none;
+        	border:none;
+        	
+        }
+	.x-sliderinfo .x-thumb::after{
+	    background:none;
+	    border:none;
+	    
+	}
+	.x-sliderinfo .x-thumb.x-dragging::after{
+	    background:none;
+	}
+        .x-sliderinfo .x-thumb.x-dragging::before{
+        	background:none;
+        }
+        .x-sliderinfo .x-thumb.x-dragging{
+        	
+        	background: none;
+        }
+        .x-sliderinfo .x-slider-data-container{
+        	/*margin: 0.925em;*/
+			position: absolute;
+			height: 0.8em;
+			margin-top: 0.5em !important;
+			background-image: none;
+			z-index: 1
+        }
+        .x-sliderinfo .x-slider-data-container ul{
+        	list-style: none;
+        }
+        .x-sliderinfo .x-slider-data-container .x-data-wrap div{
+        	font-size:0.8em;
+        	margin-top: 0.18em;
+        	float:left;
+        	text-align:center;
+        	position:absolute;
+			margin-left:0.2em;
+			width: 1.8em;
+			font-weight:bold;
+        }
+        .x-sliderinfo .x-slider-data-container .x-data-wrap:first-child{
+        	text-align:left;
+        }
+        .x-sliderinfo .x-data-wrap{
+        	font-size: 0.8em;
+			margin-top: 0.18em;
+        	
+        }
+        .x-sliderinfo .x-thumb{
+        	height: 1.2em;
+			width: 1.4em;
+			top: 0.6em;
+        	-webkit-box-shadow: 0 0 5px#888, #888 0 0 5px inset;
+        }
+        .x-sliderinfo.x-slider::after{
+        	margin:0em;
+        }
+        .x-sliderinfo.x-container.x-slider{
+        	margin: 0 0.5em 0 0.5em;
+        }
+        .x-sliderinfo .x-index-selected{
+        	background:#AD3541;
+        	color:white;
+        	font-weight:bold;
+        }
+    </style>
+</head>
+<body></body>
+<!--<div class="x-slider-data-container
+"><ul><li>1</li><li>2</li></ul></div> -->
+</html>
