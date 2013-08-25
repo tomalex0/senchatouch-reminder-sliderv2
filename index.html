@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Slider Fill</title>
-    <link rel="stylesheet" href="http://cdn.sencha.io/touch/sencha-touch-2.1.0/resources/css/sencha-touch.css" type="text/css">
-    <script type="text/javascript" src="http://cdn.sencha.io/touch/sencha-touch-2.1.0/sencha-touch-all-debug.js"></script>
+    <title>Reminder Fill</title>
+    <link rel="stylesheet" href="http://cdn.sencha.io/touch/sencha-touch-2.2.1/resources/css/sencha-touch.css" type="text/css">
+    <script type="text/javascript" src="http://cdn.sencha.io/touch/sencha-touch-2.2.1/sencha-touch-all-debug.js"></script>
     
-    <script type="text/javascript" src="https://raw.github.com/tomalex0/senchatouch-reminder-sliderv2/master/SliderReminder.js"></script>
+    <script type="text/javascript" src="javascriptsSliderReminder.js"></script>
   
-    <script type="text/javascript" src="https://raw.github.com/tomalex0/senchatouch-reminder-sliderv2/master/index.js"></script>
+    <script type="text/javascript" src="javascripts/index.js"></script>
 
     <style type="text/css">
         .demos-loading {
@@ -29,82 +29,86 @@
             font-weight: bold;
         }
 
-        
+
         .x-sliderinfo .x-draggable {
             z-index:2;
         }
         .x-sliderinfo .x-thumb{
-        	background: transparent;
-        	border: solid 3px white;
-        	border-radius :0.2em;
+            background: transparent;
+            border: solid 3px white;
+            border-radius :0.2em;
         }
         .x-sliderinfo .x-thumb::before {
-        	
-        	border-radius :0.2em;
-        	background:none;
-        	border:none;
-        	
+
+            border-radius :0.2em;
+            background:none;
+            border:none;
+
         }
-	.x-sliderinfo .x-thumb::after{
-	    background:none;
-	    border:none;
-	    
-	}
-	.x-sliderinfo .x-thumb.x-dragging::after{
-	    background:none;
-	}
+        .x-sliderinfo .x-thumb::after{
+            background:none;
+            border:none;
+
+        }
+        .x-sliderinfo .x-thumb.x-dragging::after{
+            background:none;
+        }
         .x-sliderinfo .x-thumb.x-dragging::before{
-        	background:none;
+            background:none;
         }
         .x-sliderinfo .x-thumb.x-dragging{
-        	
-        	background: none;
+
+            background: none;
         }
         .x-sliderinfo .x-slider-data-container{
-        	/*margin: 0.925em;*/
-			position: absolute;
-			height: 0.8em;
-			margin-top: 0.5em !important;
-			background-image: none;
-			z-index: 1
+            /*margin: 0.925em;*/
+            position: absolute;
+            height: 0.8em;
+            margin-top: 0.5em !important;
+            background-image: none;
+            z-index: 1
         }
         .x-sliderinfo .x-slider-data-container ul{
-        	list-style: none;
+            list-style: none;
         }
         .x-sliderinfo .x-slider-data-container .x-data-wrap div{
-        	font-size:0.8em;
-        	margin-top: 0.18em;
-        	float:left;
-        	text-align:center;
-        	position:absolute;
-			margin-left:0.2em;
-			width: 1.8em;
-			font-weight:bold;
+            font-size:0.8em;
+            margin-top: 0.15em;
+            float:left;
+            text-align:center;
+            position:absolute;
+            margin-left:0.2em;
+            width: 1.8em;
+            font-weight:bold;
         }
         .x-sliderinfo .x-slider-data-container .x-data-wrap:first-child{
-        	text-align:left;
+            text-align:left;
         }
+
         .x-sliderinfo .x-data-wrap{
-        	font-size: 0.8em;
-			margin-top: 0.18em;
-        	
+            font-size: 0.8em;
+            margin-top: 0.18em;
+
         }
         .x-sliderinfo .x-thumb{
-        	height: 1.2em;
-			width: 1.4em;
-			top: 0.6em;
-        	-webkit-box-shadow: 0 0 5px#888, #888 0 0 5px inset;
+            height: 1.2em;
+            width: 1.4em;
+            top: 0.5em;
+            -webkit-box-shadow: 0 0 5px#888, #888 0 0 5px inset;
         }
         .x-sliderinfo.x-slider::after{
-        	margin:0em;
+            margin:0em;
+        }
+        .x-slider:before {
+            margin: 0px;
         }
         .x-sliderinfo.x-container.x-slider{
-        	margin: 0 0.5em 0 0.5em;
+            margin: 0 0.5em 0 0.5em;
         }
         .x-sliderinfo .x-index-selected{
-        	background:#AD3541;
-        	color:white;
-        	font-weight:bold;
+            background:#AD3541;
+            color:white;
+            font-weight:bold;
         }
     </style>
 </head>
